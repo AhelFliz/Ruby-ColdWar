@@ -3,11 +3,12 @@ module Planets
   class Planet
     attr_accessor :name, :life, :missiles_round, :type_planet, :code
 
-    def initialize(name, life, missiles_round, type_planet)
+    def initialize(name, life, missiles_round, type_planet, code)
       @name = name
       @life = life
       @missiles_round = missiles_round
       @type_planet = type_planet
+      @code = code
     end
 
     def rest_missiles(missiles_attack)
