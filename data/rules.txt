@@ -1,0 +1,9 @@
+                            GAME RULES
+
+  - 5 teams will be created, each starting with 200 health.
+  - In each round, the teams have 50 bombs, which they can use to attack or defend.
+  - If a team decides to defend with a certain number of bombs instead of attacking, the bombs will count as half in defense.
+  - If a team has more defense than the bombs received from other teams, the excess will be added as health.
+  - A team cannot have more than 200 health, so there is a healing limit.
+  - Teams can also use those bombs to attack other teams, and the bombs will not be halved in the case of an attack.
+  - Once a team's health reaches 0, they will be eliminated.
