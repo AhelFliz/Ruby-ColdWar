@@ -16,17 +16,25 @@ class CreatePlanets
 
   def define_names
     @names = []
-
     @number_of_teams.times do
       name = get_unique_name
       planet = get_valid_planet_type
-      case planet
-      when 'blue'
-        pla
-      end
-      @list_of_teams
+      save_planets(name, planet)
     end
   end
+
+  def save_planets(name, planet)
+    case planet
+    when 'blue'
+      planet = Planets::PlanetBlue.new(name, 200, 50, planet, 220)
+    when 'small'
+      planet = Planets::PlanetSmall.new(name, 200, 50, planet, 220)
+    end
+
+    @list_of_teams << planetc
+    puts 'saved planet!'.green
+  end
+
   def get_unique_name
     name = ''
     loop do
@@ -58,7 +66,7 @@ class CreatePlanets
     planet_type
   end
 
-  def list_of_teams
+  def self.list_of_teams
     @list_of_teams = []
   end
 end
